@@ -1,0 +1,90 @@
+.banking {
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $neutral;
+    overflow: hidden;
+
+
+    &__body {
+        padding: 215px 0px 0px 0px;
+        position: relative;
+
+        @media (max-width: $md1) {
+            padding: 150px 0px 0px 0px;
+        }
+
+        @media (max-width: $md2) {
+            padding: 120px 0px 0px 0px;
+        }
+
+        @media (max-width: $md3) {
+            padding: 50px 0px 0px 0px;
+        }
+    }
+
+    &__info {
+        color: white;
+        padding: 130px 0px 95px 0px;
+        max-width: 405px;
+
+        @media (max-width: $md2) {
+            padding: 90px 0px 130px 0px;
+        }
+
+        @media (max-width: $md3) {
+            padding: 90px 0px 200px 0px;
+        }
+
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 1.3;
+        margin: 0px 0px 18px 0px;
+
+        @media (max-width: $md3) {
+            font-size: 50px;
+        }
+
+    }
+
+    &__subtitle {
+        margin: 0px 0px 18px 0px;
+    }
+
+    &__images {
+        overflow: auto !important;
+    }
+
+    &__image {
+        position: absolute;
+        top: 165px;
+        left: 540px;
+
+        @media (max-width: $md1) {
+            top: 100px;
+            left: 410px;
+        }
+
+        @media (max-width: $md2) {
+            display: none;
+        }
+    }
+
+    &__msg-image {
+        position: absolute;
+        bottom: 20px;
+        left: 420px;
+
+        @media (max-width: $md1) {
+            bottom: 10px;
+            left: 300px;
+        }
+
+        @media (max-width: $md2) {
+            display: none;
+        }
+    }
+}

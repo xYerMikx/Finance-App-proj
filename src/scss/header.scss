@@ -1,0 +1,106 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        min-height: 214px;
+        justify-content: space-between;
+
+        @media (max-width: $md1) {
+            min-height: 150px;
+        }
+
+        @media (max-width: $md2) {
+            min-height: 120px;
+        }
+    }
+}
+
+.menu {
+
+    &__icon {
+        display: none;
+    }
+
+    &__logo {
+
+        img {
+            width: 50px;
+            height: 53px;
+        }
+
+        @media (max-width: $md3) {
+            margin-right: 50px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        flex: 0 1 685px;
+        justify-content: space-between;
+        line-height: 1.5;
+        font-size: 17px;
+        font-weight: 400;
+
+        @media (max-width: $md1) {
+            flex: 0 1 550px;
+        }
+
+        @media (max-width: $md2) {
+            flex: 0 1 400px;
+        }
+
+        @media (max-width: $md3) {
+            flex: 1 1 auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 70px;
+
+        @media (max-width: $md1) {
+            gap: 50px;
+        }
+
+        @media (max-width: $md2) {
+            gap: 30px;
+            font-size: 16px;
+        }
+
+        @media (max-width: $md3) {
+            font-size: 20px;
+        }
+    }
+
+    &__link {
+        color: white;
+        transition: all 0.15s linear;
+
+        &:hover {
+            color: $pink;
+        }
+
+    }
+
+    &__button {
+        padding: 15px 54px;
+        color: white;
+        background-color: $pink;
+        border-radius: 20px;
+        transition: all 0.15s linear;
+
+        &:hover {
+            background-color: white;
+            color: $pink;
+        }
+
+        @media (max-width: $md2) {
+            font-size: 16px;
+        }
+    }
+}
